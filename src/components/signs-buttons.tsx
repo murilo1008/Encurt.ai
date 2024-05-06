@@ -21,17 +21,23 @@ export default function SignsButtons(){
 
             ) : (
                 <>
-                    <SignInButton mode="modal">
-                        <Button className="w-24" variant="outline">
-                            Entrar
-                        </Button>
-                    </SignInButton>
+                    <div className="md:flex hidden">
+                        <SignInButton mode="modal">
+                            <Button className="w-24" variant="outline">
+                                Entrar
+                            </Button>
+                        </SignInButton>
+                    </div>
 
-                    <SignUpButton mode="modal">
-                        <Button className="w-24">
-                            Cadastrar
-                        </Button>
-                    </SignUpButton>
+
+                    <div>
+                        <SignUpButton mode="modal">
+                            <Button className="w-24">
+                                Cadastrar
+                            </Button>
+                        </SignUpButton>
+                    </div>
+
                 </>
 
             )}

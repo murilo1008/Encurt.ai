@@ -56,7 +56,7 @@ export default function LinksSidebar(){
 
                 <FeedbackDialog/>
                 
-                <Link href='/dashboard/settings' className=" mt-40">
+                <Link href='/dashboard/settings' className=" md:mt-40 mt-20">
                     <div className="gap-5 h-10 items-center flex bg-background p-4 mx-4 rounded cursor-pointer hover:bg-muted ease-in-out duration-300">
                         <Settings strokeWidth={2} className="h-5 w-5"/> 
                         <span className="text-base font-semibold">Configurações</span>
