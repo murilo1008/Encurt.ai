@@ -29,7 +29,7 @@ export default function FeedbackDialog(){
                     </div>
                 
                     <DialogFooter>
-                        <Button type="submit" className="w-24">Enviar</Button>
+                        <Button type="submit" className="w-24 self-end">Enviar</Button>
                     </DialogFooter>
                 </DialogContent>
             </form>
