@@ -29,8 +29,8 @@ export default function Goal(){
                         </CardHeader>
                         <CardContent className="space-y-2">
                             <div className="space-y-1">
-                                <Label htmlFor="name">Cole um URL</Label>
-                                <Input id="name" placeholder="http://link-longo.com/encurte" />
+                                <Label htmlFor="link">Cole um URL</Label>
+                                <Input id="link" placeholder="http://link-longo.com/encurte" />
                             </div>
                         </CardContent>
                         <CardFooter className="flex flex-col">
@@ -58,8 +58,8 @@ export default function Goal(){
                         </CardHeader>
                         <CardContent className="space-y-2">
                             <div className="space-y-1">
-                                <Label htmlFor="name">Cole um URL</Label>
-                                <Input id="name" placeholder="http://link-longo.com/encurte" />
+                                <Label htmlFor="link">Cole um URL</Label>
+                                <Input id="link" placeholder="http://link-longo.com/encurte" />
                             </div>
                         </CardContent>
                         <CardFooter className="flex flex-col">

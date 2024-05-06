@@ -4,6 +4,8 @@ import { Nunito } from "next/font/google";
 
 import { TRPCReactProvider } from "@/trpc/react";
 import { ThemeProvider } from "@/components/theme-provider";
+import { ptBR } from "@clerk/localizations";
+import { ClerkProvider } from '@clerk/nextjs'
 
 const fontFamily = Nunito({
   subsets: ["latin"],
@@ -21,17 +23,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="br">
-      <body className={fontFamily.className}>
-        <TRPCReactProvider>
-            <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem>
-                {children}
-            </ThemeProvider>
-        </TRPCReactProvider>
-      </body>
-    </html>
+        <ClerkProvider appearance={{
+            variables: { colorPrimary: '#6d28d9' },
+            elements: {
+                formButtonPrimary: "#6d28d9"
+            }
+        }}
+        localization={ptBR}>
+            <html lang="br">
+                <body className={fontFamily.className}>
+                    <TRPCReactProvider>
+                        <ThemeProvider
+                        attribute="class"
+                        defaultTheme="system"
+                        enableSystem>
+                            {children}
+                        </ThemeProvider>
+                    </TRPCReactProvider>
+                </body>
+            </html>
+        </ClerkProvider>
   );
 }
