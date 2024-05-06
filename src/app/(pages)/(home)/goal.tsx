@@ -3,7 +3,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Link, QrCode } from 'lucide-react'
+import { CircleCheck, Link, QrCode } from 'lucide-react'
 
 export default function Goal(){
     return(
@@ -22,10 +22,10 @@ export default function Goal(){
                     </TabsTrigger>
                 </TabsList>
 
-                <TabsContent value="link" className=" text-3xl">
+                <TabsContent value="link">
                     <Card>
                         <CardHeader>
-                            <CardTitle>Encurte um link</CardTitle>
+                            <CardTitle className="text-2xl">Encurte um link</CardTitle>
                         </CardHeader>
                         <CardContent className="space-y-2">
                             <div className="space-y-1">
@@ -33,15 +33,28 @@ export default function Goal(){
                                 <Input id="name" placeholder="http://link-longo.com/encurte" />
                             </div>
                         </CardContent>
-                        <CardFooter>
-                            <Button>Cadastre-se e receba seu link</Button>
+                        <CardFooter className="flex flex-col">
+                            <Button className=" md:self-start self-center">Cadastre-se e receba seu link</Button>
+                            <div className="flex flex-col items-center w-full mt-10">
+                                <p className="text-center md:text-2xl">Não é necessário cartão de crédito. Seu plano gratuito inclui:</p>
+                                <div className="flex gap-10 mt-5 ">
+                                    <div className="flex items-center gap-1">
+                                        <CircleCheck strokeWidth={2} className="w-4 h-4 text-primary"/>
+                                        <span>Links Curtos</span>
+                                    </div>
+                                    <div className="flex items-center gap-1">
+                                        <CircleCheck strokeWidth={2} className="w-4 h-4 text-primary"/>
+                                        <span>QR Codes</span>
+                                    </div>
+                                </div>
+                            </div>
                         </CardFooter>
                     </Card>
                 </TabsContent>
-                <TabsContent value="qrcode" className=" text-3xl">
+                <TabsContent value="qrcode">
                     <Card>
                         <CardHeader>
-                            <CardTitle>Crie um QR Code</CardTitle>
+                            <CardTitle className="text-2xl">Crie um QR Code</CardTitle>
                         </CardHeader>
                         <CardContent className="space-y-2">
                             <div className="space-y-1">
@@ -49,8 +62,21 @@ export default function Goal(){
                                 <Input id="name" placeholder="http://link-longo.com/encurte" />
                             </div>
                         </CardContent>
-                        <CardFooter>
-                            <Button>Cadastre-se e receba seu QR Code</Button>
+                        <CardFooter className="flex flex-col">
+                            <Button className=" md:self-start self-center">Cadastre-se e receba seu QR Code</Button>
+                            <div className="flex flex-col items-center w-full mt-10">
+                                <p className="text-center md:text-2xl">Não é necessário cartão de crédito. Seu plano gratuito inclui:</p>
+                                <div className="flex gap-10 mt-5 ">
+                                    <div className="flex items-center gap-1">
+                                        <CircleCheck strokeWidth={2} className="w-4 h-4 text-primary"/>
+                                        <span>Links Curtos</span>
+                                    </div>
+                                    <div className="flex items-center gap-1">
+                                        <CircleCheck strokeWidth={2} className="w-4 h-4 text-primary"/>
+                                        <span>QR Codes</span>
+                                    </div>
+                                </div>
+                            </div>
                         </CardFooter>
                     </Card>
                 </TabsContent>
