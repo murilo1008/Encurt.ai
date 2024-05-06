@@ -50,9 +50,9 @@ export default function FormQRCode(){
                 </form>
             </div>
 
-            <div className="flex flex-col gap-2 w-1/3 bg-muted pt-20 items-center">
+            <div className="flex flex-col gap-2 md:w-1/3 bg-muted pt-20 items-center">
                 <span className="text-xl font-semibold">Prévia</span>
-                <Image src={qrcodeimage} alt="QR Code Image" width={1080} height={1080} className="h-64 w-64"/>
+                <Image src={qrcodeimage} alt="QR Code Image" width={1080} height={1080} className="h-64 w-64 md:mb-0 mb-20 object-contain"/>
             </div>
         </div>
     )
