@@ -11,7 +11,7 @@ interface HomeLayoutProps {
 }
 
 export const metadata: Metadata = {
-    title: 'Encurta.ai',
+    title: 'Encurt.ai',
     
 }
 

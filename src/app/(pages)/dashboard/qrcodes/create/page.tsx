@@ -1,5 +1,6 @@
 import { currentUser } from "@clerk/nextjs/server"
 import { redirect } from "next/navigation"
+import FormQRCode from "./form-qrcode"
 
 export default async function CreateQRCodes(){
 
@@ -11,7 +12,7 @@ export default async function CreateQRCodes(){
 
     return(
         <div className="flex w-full">
-
+            <FormQRCode/>
         </div>
     )
 }

@@ -32,7 +32,7 @@ export default function HeaderDashboard(){
 
 
     return(
-        <div className="fixed top-0 h-20 md:flex hidden w-full items-center justify-between md:pr-[270px] p-5 ml-[1px] border-b">
+        <div className="fixed top-0 h-20 bg-background md:flex hidden w-full items-center justify-between md:pr-[272px] p-5 ml-[2px] border-b">
             <h1 className="text-lg font-semibold">{title}</h1>
             <div className="flex items-center gap-2">
                 <Button>Upgrade</Button>

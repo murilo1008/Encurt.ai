@@ -34,7 +34,7 @@ export default function Sidebar(){
             </div>
 
 
-            <div className="h-full fixed top-0 left-0 py-0 sm:translate-x-0 -translate-x-full transition-transform border-r-[0.1px] border-foreground">
+            <div className="h-full fixed top-0 left-0 py-0 sm:translate-x-0 -translate-x-full transition-transform border-r-[0.1px] border">
                 <LinksSidebar/>
             </div>
 

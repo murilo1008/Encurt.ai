@@ -4,6 +4,7 @@ import { UserButton } from "@clerk/nextjs";
 import Logo from "./logo";
 import { ModeToggle } from "./ui/mode-toggle";
 import CreatePopover from "./create-popover";
+import FeedbackDialog from "./feedback-dialog";
 
 export default function LinksSidebar(){
 
@@ -52,14 +53,11 @@ export default function LinksSidebar(){
                         <span className="text-base font-semibold">Análises</span>
                     </div>
                 </Link>
-                <Link href='/feedbacks'>
+
+                <FeedbackDialog/>
+                
+                <Link href='/dashboard/settings' className=" mt-40">
                     <div className="gap-5 h-10 items-center flex bg-background p-4 mx-4 rounded cursor-pointer hover:bg-muted ease-in-out duration-300">
-                        <MessageCircleMore strokeWidth={2} className="h-5 w-5"/> 
-                        <span className="text-base font-semibold">Feedbacks</span>
-                    </div>
-                </Link>
-                <Link href='/dashboard/settings'>
-                    <div className="gap-5 h-10 items-center flex bg-background p-4 mx-4 rounded cursor-pointer hover:bg-muted ease-in-out duration-300 mt-40">
                         <Settings strokeWidth={2} className="h-5 w-5"/> 
                         <span className="text-base font-semibold">Configurações</span>
                     </div>
