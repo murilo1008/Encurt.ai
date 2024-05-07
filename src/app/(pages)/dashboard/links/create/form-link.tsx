@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import Link from "next/link";
 
 export default function FormLink(){
     return(
@@ -35,7 +36,10 @@ export default function FormLink(){
                 </div>
 
                 <div className="flex justify-end items-center gap-5 mt-16">
-                    <Button className="w-40" variant={"outline"}>Cancelar</Button>
+                    <Link href={"/dashboard/links"}>
+                        <Button className="w-40" variant={"outline"}>Cancelar</Button>
+                    </Link>
+
                     <Button className="w-40">Criar</Button>
                 </div>
 

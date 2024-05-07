@@ -40,7 +40,7 @@ export default function FormQRCode(){
                     </div>
 
                     <div className="flex justify-end items-center gap-5 mt-16">
-                        <Link href={"/dashboard/links"}>
+                        <Link href={"/dashboard/qrcodes"}>
                             <Button className="w-40" variant={"outline"}>Cancelar</Button>
                         </Link>
 

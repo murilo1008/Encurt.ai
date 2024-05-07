@@ -47,12 +47,12 @@ export default function LinksSidebar(){
                         <span className="text-base font-semibold">QR Codes</span>
                     </div>
                 </Link>
-                <Link href='/dashboard/analytics'>
+                {/* <Link href='/dashboard/analytics'>
                     <div className="gap-5 h-10 items-center flex bg-background p-4 mx-4 rounded cursor-pointer hover:bg-muted ease-in-out duration-300 ">
                         <LineChart strokeWidth={2} className="h-5 w-5"/> 
                         <span className="text-base font-semibold">Análises</span>
                     </div>
-                </Link>
+                </Link> */}
 
                 <FeedbackDialog/>
                 

@@ -13,7 +13,7 @@ export default async function Settigns(){
 
     return(
         <div className="flex w-full">
-            <UserButton afterSignOutUrl="/"/>
+
         </div>
     )
 }
