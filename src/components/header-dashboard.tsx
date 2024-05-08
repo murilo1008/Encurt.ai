@@ -18,6 +18,7 @@ const pathToTitleMap: PathToTitleMap = {
     '/dashboard/analytics': "Análises",
     '/dashboard/settings': "Configurações",
     '/dashboard/upgrade': "Upgrade",
+    '/dashboard/link-in-bio': "Link in Bio",
     '/dashboard/links/create': "Criar link",
     '/dashboard/qrcodes/create': "Criar QR Code",
 }

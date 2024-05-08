@@ -1,4 +1,4 @@
-import { Sparkles, Newspaper, MonitorPlay, LayoutGrid, PencilRuler, LinkIcon, QrCode, Home, LineChart, MessageCircleMore, Settings } from "lucide-react";
+import { Sparkles, Newspaper, MonitorPlay, LayoutGrid, PencilRuler, LinkIcon, QrCode, Home, LineChart, MessageCircleMore, Settings, Link2 } from "lucide-react";
 import Link from "next/link";
 import { UserButton } from "@clerk/nextjs";
 import Logo from "./logo";
@@ -47,12 +47,12 @@ export default function LinksSidebar(){
                         <span className="text-base font-semibold">QR Codes</span>
                     </div>
                 </Link>
-                {/* <Link href='/dashboard/analytics'>
+                <Link href='/dashboard/link-in-bio'>
                     <div className="gap-5 h-10 items-center flex bg-background p-4 mx-4 rounded cursor-pointer hover:bg-muted ease-in-out duration-300 ">
-                        <LineChart strokeWidth={2} className="h-5 w-5"/> 
-                        <span className="text-base font-semibold">Análises</span>
+                        <Link2 strokeWidth={2} className="h-5 w-5"/> 
+                        <span className="text-base font-semibold">Link in Bio</span>
                     </div>
-                </Link> */}
+                </Link>
 
                 <FeedbackDialog/>
                 
